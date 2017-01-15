@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Todolist</title>
+<link rel="stylesheet" type="text/css" href="todolist.css">
+</head>
+<body>
+
+<div id="todo-app">
+	<h1 class="title">todos</h1>
+	<div class="main">
+		<div class="todo-input-wrap">
+			<input id="input-content" class="todo-input" type="text" autofocus="autofocus" autocomplete="false" placeholder="What needs to be done?"></input>
+		</div>
+		<div class="todo-items-wrap">
+			<span id="completeAll" class="status">&gt;</span>
+			<ul id="todo-items" class="todo-items"></ul>
+		</div>
+	</div>
+	<div id="toggle" class="footer">
+		<span><strong id="todo-items-active">0</strong> items left</span>
+		<div class="filters">
+			<a id="showAll" class="btn cur">all</a>
+			<a id="showActive" class="btn">active</a>
+			<a id="showComplete" class="btn">completed</a>
+		</div>
+		<span id="clearComplete" class="btn-clear-completed">clear completed</span>
+	</div>
+</div>
+
+<script type="text/javascript" src="todolist.js"></script>
+</body>
+</html>
